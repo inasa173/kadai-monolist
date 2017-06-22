@@ -58,3 +58,7 @@ gem 'rakuten_web_service'
 #for Rakuten web service
 gem 'dotenv-rails'
 
+#for heroku
+group :production do
+  gem 'pg'
+end
