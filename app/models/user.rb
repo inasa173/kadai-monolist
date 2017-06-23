@@ -33,7 +33,7 @@ class User < ApplicationRecord
 
   def unhave(item)
     have = self.haves.find_by(item_id: item.id)
-    have.destroy if want
+    have.destroy if have
   end
 
   def have?(item)
